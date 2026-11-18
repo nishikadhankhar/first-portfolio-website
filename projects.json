@@ -1,0 +1,180 @@
+{
+  "featured": [
+    {
+      "name": "dukaan_saathi",
+      "title": "Dukaan Saathi",
+      "blurb": "AI business partner for Paytm merchants, delivered through the Soundbox on the counter. Reads payment history, picks the one action worth taking today, says it aloud in the shopkeeper's language, and reports what it earned. Paytm Build for India AI Hackathon, Merchant Growth AI track.",
+      "tags": [
+        "Hackathon",
+        "AI",
+        "Voice"
+      ],
+      "language": "TypeScript",
+      "repo": "https://github.com/nishikadhankhar/dukaan_saathi",
+      "live": "",
+      "pushed": "2026-10-01",
+      "stars": 0
+    },
+    {
+      "name": "cold-storage-monitor",
+      "title": "Cold Storage Monitor",
+      "blurb": "IoT system for onion cold storage: an ESP32 tracks temperature, humidity and decay gases in real time, with a live cloud dashboard, TFT display, LEDs and buzzer alerts.",
+      "tags": [
+        "IoT",
+        "ESP32",
+        "Live demo"
+      ],
+      "language": "TypeScript",
+      "repo": "https://github.com/nishikadhankhar/cold-storage-monitor",
+      "live": "https://cold-storage-monitor.onrender.com",
+      "pushed": "2026-08-08",
+      "stars": 0
+    },
+    {
+      "name": "scheme-saathi",
+      "title": "Scheme Saathi",
+      "blurb": "Voice-first assistant that finds Indian government schemes for people in their own language (Hindi, Kannada and more).",
+      "tags": [
+        "AI",
+        "Voice",
+        "Social impact"
+      ],
+      "language": "JavaScript",
+      "repo": "https://github.com/nishikadhankhar/scheme-saathi",
+      "live": "",
+      "pushed": "2026-10-21",
+      "stars": 0
+    },
+    {
+      "name": "grievance-swarm",
+      "title": "Grievance Swarm",
+      "blurb": "Campus complaint system where memory-backed AI agents route and remember grievances, while staff make the final call.",
+      "tags": [
+        "AI agents",
+        "TypeScript"
+      ],
+      "language": "TypeScript",
+      "repo": "https://github.com/nishikadhankhar/grievance-swarm",
+      "live": "",
+      "pushed": "2026-11-01",
+      "stars": 0
+    },
+    {
+      "name": "breathewise",
+      "title": "BreatheWise",
+      "blurb": "Tells a school which outdoor periods to move indoors on bad-air days, from its timetable and the hourly air forecast. Runs on AWS.",
+      "tags": [
+        "AWS",
+        "Python",
+        "Live demo"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/breathewise",
+      "live": "https://pe83q72i80.execute-api.us-east-1.amazonaws.com/",
+      "pushed": "2026-10-11",
+      "stars": 0
+    },
+    {
+      "name": "live-captions-gnani",
+      "title": "Live Captions",
+      "blurb": "Real-time Hindi and English live captions, powered by Gnani Prisma v3.0.",
+      "tags": [
+        "Speech",
+        "Python"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/live-captions-gnani",
+      "live": "",
+      "pushed": "2026-11-10",
+      "stars": 0
+    },
+    {
+      "name": "koshsetu-sih",
+      "title": "KoshSetu",
+      "blurb": "Security deposit and FDR portal, prototype for Smart India Hackathon problem statement SIH26265.",
+      "tags": [
+        "SIH",
+        "Python",
+        "Live demo"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/koshsetu-sih",
+      "live": "https://koshsetu-sih.vercel.app",
+      "pushed": "2026-10-30",
+      "stars": 0
+    },
+    {
+      "name": "pacer",
+      "title": "Pacer",
+      "blurb": "AI productivity companion that prioritises your tasks and nudges you toward action instead of only reminding you. Built with Gemini in Google AI Studio.",
+      "tags": [
+        "AI",
+        "TypeScript"
+      ],
+      "language": "TypeScript",
+      "repo": "https://github.com/nishikadhankhar/pacer",
+      "live": "",
+      "pushed": "2026-06-28",
+      "stars": 0
+    },
+    {
+      "name": "pi-barcode-scanner",
+      "title": "Pi Barcode Scanner",
+      "blurb": "Raspberry Pi 4 and Camera Module 3 that act as a USB keyboard: scan a barcode and the text is typed into any app on the host computer via USB HID.",
+      "tags": [
+        "Embedded",
+        "Raspberry Pi",
+        "USB HID"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/pi-barcode-scanner",
+      "live": "",
+      "pushed": "2026-07-29",
+      "stars": 0
+    },
+    {
+      "name": "gesture_draw",
+      "title": "Air-Draw",
+      "blurb": "Touchless drawing app. Pinch thumb and index finger to draw in the air, tracked with OpenCV and MediaPipe hand landmarks.",
+      "tags": [
+        "Computer vision",
+        "OpenCV",
+        "MediaPipe"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/gesture_draw",
+      "live": "",
+      "pushed": "2026-06-24",
+      "stars": 1
+    },
+    {
+      "name": "gitbounty",
+      "title": "GitBounty",
+      "blurb": "Open-source work, rewarded when it ships: sign in with GitHub, earn points as your PRs are merged, climb the leaderboards.",
+      "tags": [
+        "Open source",
+        "Python"
+      ],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/gitbounty",
+      "live": "",
+      "pushed": "2026-09-29",
+      "stars": 0
+    },
+    {
+      "name": "ManchX",
+      "title": "ManchX",
+      "blurb": "Student-only campus hub with live events and hackathons, a social feed, messaging, and an admin dashboard for societies.",
+      "tags": [
+        "Web app",
+        "TypeScript"
+      ],
+      "language": "TypeScript",
+      "repo": "https://github.com/nishikadhankhar/ManchX",
+      "live": "",
+      "pushed": "2025-11-21",
+      "stars": 0
+    }
+  ],
+  "more": []
+}

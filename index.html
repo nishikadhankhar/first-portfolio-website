@@ -28,7 +28,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>A passionate developer exploring new technologies and building innovative solutions.</p>
+        <p>B.Tech student building real-world systems with Python, from embedded hardware (Raspberry Pi, ESP32, USB/HID) to computer vision and voice-first AI. I like shipping working prototypes at hackathons and learning in public.</p>
     </section>
 
     <!-- TECHNICAL SKILLS -->
@@ -50,6 +50,26 @@
             <div class="skill-card">
                 <span class="skill-icon">&#43;&#43;</span>
                 <span class="skill-name">C++</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">&#128013;</span>
+                <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">TS</span>
+                <span class="skill-name">TypeScript</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">JS</span>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">&#128268;</span>
+                <span class="skill-name">IoT / ESP32</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">&#128065;</span>
+                <span class="skill-name">OpenCV</span>
             </div>
         </div>
     </section>
@@ -98,13 +118,15 @@
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (rendered from projects.json, refreshed daily by GitHub Actions) -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>My GitHub Repositories</h3>
+        <div id="project-grid" class="project-grid"><p class="muted">Loading projects...</p></div>
+        <div id="more-projects" class="project" hidden>
+            <h3>More repositories</h3>
             <ul id="repo-list"></ul>
         </div>
+        <p class="muted small">Auto-updated from <a href="https://github.com/nishikadhankhar" target="_blank" rel="noopener">GitHub</a></p>
     </section>
 
     <!-- CONTACT -->
@@ -116,27 +138,44 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Nishika Dhankhar &mdash; Built with passion</p>
+        <p>&copy; <span id="year">2026</span> Nishika Dhankhar &mdash; Built with passion</p>
     </footer>
 
     <script>
-        async function fetchGitHubRepos() {
-            const username = "nishikadhankhar";
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+        function projectCard(p) {
+            const tags = [...(p.language ? [p.language] : []), ...(p.tags || [])]
+                .filter((t, i, a) => a.indexOf(t) === i)
+                .map(t => `<span class="timeline-tag">${esc(t)}</span>`).join(" ");
+            const live = p.live ? `<a class="btn" href="${esc(p.live)}" target="_blank" rel="noopener">Live demo</a>` : "";
+            return `<article class="project-card">
+                <h3>${esc(p.title)}</h3>
+                <div class="tags">${tags}</div>
+                <p>${esc(p.blurb)}</p>
+                <div class="links">${live}<a class="btn" href="${esc(p.repo)}" target="_blank" rel="noopener">Code</a></div>
+            </article>`;
+        }
+
+        async function loadProjects() {
+            const grid = document.getElementById("project-grid");
             try {
-                const response = await fetch(`https://api.github.com/users/${username}/repos`);
-                const repos = await response.json();
-                const repoList = document.getElementById("repo-list");
-                repoList.innerHTML = "";
-                repos.forEach(repo => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
-                    repoList.appendChild(li);
-                });
+                const res = await fetch("projects.json", { cache: "no-cache" });
+                if (!res.ok) throw new Error(res.status);
+                const data = await res.json();
+                grid.innerHTML = data.featured.map(projectCard).join("");
+                if (data.more.length) {
+                    document.getElementById("repo-list").innerHTML = data.more.map(p =>
+                        `<li><a href="${esc(p.repo)}" target="_blank" rel="noopener">${esc(p.name)}</a></li>`).join("");
+                    document.getElementById("more-projects").hidden = false;
+                }
             } catch (e) {
-                document.getElementById("repo-list").innerHTML = "<li>Could not load repositories.</li>";
+                grid.innerHTML = '<p class="muted">Could not load projects. See <a href="https://github.com/nishikadhankhar" target="_blank" rel="noopener">GitHub</a>.</p>';
             }
         }
-        fetchGitHubRepos();
+        loadProjects();
     </script>
 </body>
 </html>
