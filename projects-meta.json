@@ -11,7 +11,7 @@
       "repo": "cold-storage-monitor",
       "title": "Cold Storage Monitor",
       "blurb": "IoT system for onion cold storage: an ESP32 tracks temperature, humidity and decay gases in real time, with a live cloud dashboard, TFT display, LEDs and buzzer alerts.",
-      "tags": ["IoT", "ESP32", "Live demo"],
+      "tags": ["IoT", "ESP32"],
       "live": "https://cold-storage-monitor.onrender.com"
     },
     {
@@ -30,7 +30,7 @@
       "repo": "breathewise",
       "title": "BreatheWise",
       "blurb": "Tells a school which outdoor periods to move indoors on bad-air days, from its timetable and the hourly air forecast. Runs on AWS.",
-      "tags": ["AWS", "Python", "Live demo"]
+      "tags": ["AWS", "Python"]
     },
     {
       "repo": "live-captions-gnani",
@@ -42,7 +42,7 @@
       "repo": "koshsetu-sih",
       "title": "KoshSetu",
       "blurb": "Security deposit and FDR portal, prototype for Smart India Hackathon problem statement SIH26265.",
-      "tags": ["SIH", "Python", "Live demo"]
+      "tags": ["SIH", "Python"]
     },
     {
       "repo": "pacer",

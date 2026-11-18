@@ -21,8 +21,7 @@
       "blurb": "IoT system for onion cold storage: an ESP32 tracks temperature, humidity and decay gases in real time, with a live cloud dashboard, TFT display, LEDs and buzzer alerts.",
       "tags": [
         "IoT",
-        "ESP32",
-        "Live demo"
+        "ESP32"
       ],
       "language": "TypeScript",
       "repo": "https://github.com/nishikadhankhar/cold-storage-monitor",
@@ -65,8 +64,7 @@
       "blurb": "Tells a school which outdoor periods to move indoors on bad-air days, from its timetable and the hourly air forecast. Runs on AWS.",
       "tags": [
         "AWS",
-        "Python",
-        "Live demo"
+        "Python"
       ],
       "language": "Python",
       "repo": "https://github.com/nishikadhankhar/breathewise",
@@ -94,8 +92,7 @@
       "blurb": "Security deposit and FDR portal, prototype for Smart India Hackathon problem statement SIH26265.",
       "tags": [
         "SIH",
-        "Python",
-        "Live demo"
+        "Python"
       ],
       "language": "Python",
       "repo": "https://github.com/nishikadhankhar/koshsetu-sih",

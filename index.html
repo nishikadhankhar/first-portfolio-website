@@ -3,169 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishika Dhankhar - Portfolio</title>
+    <title>Nishika Dhankhar | Developer, Hardware &amp; AI Builder</title>
+    <meta name="description" content="Nishika Dhankhar: B.Tech student building real-world systems with Python, embedded hardware, computer vision and voice-first AI.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-    <div class="scan-line"></div>
 
-    <header>
-        <div class="header-glow"></div>
-        <h1>Nishika Dhankhar</h1>
-        <p class="tagline">Futuristic &nbsp;|&nbsp; Minimal &nbsp;|&nbsp; Developer</p>
-    </header>
+    <!-- INTRO -->
+    <div id="loader" aria-hidden="true">
+        <span class="label loader-label">Portfolio &mdash; <span class="year">2026</span></span>
+        <div class="loader-word"><em>Create</em></div>
+        <div class="loader-count" id="loader-count">000</div>
+        <div class="loader-bar"><span id="loader-bar"></span></div>
+    </div>
 
-    <nav class="nav-bar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <!-- NAV -->
+    <nav class="nav" aria-label="Main">
+        <a class="nav-brand" href="#top">Nishika</a>
+        <span class="nav-sep"></span>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <span class="nav-sep"></span>
+        <a class="nav-cta" href="#connect">Contact</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>B.Tech student building real-world systems with Python, from embedded hardware (Raspberry Pi, ESP32, USB/HID) to computer vision and voice-first AI. I like shipping working prototypes at hackathons and learning in public.</p>
-    </section>
+    <!-- HERO -->
+    <header id="top" class="hero">
+        <h1 class="reveal">Building <em>real things.</em></h1>
+        <p class="label reveal d1">Developer &middot; Hardware &middot; Computer Vision &middot; Voice AI</p>
+        <a class="pill-btn reveal d2" href="#projects">See my work <span aria-hidden="true">&rarr;</span></a>
+        <p class="hero-sub reveal d3">B.Tech student turning ideas into working systems, from Raspberry Pi and ESP32 hardware to voice-first AI that speaks people's own language. I like shipping prototypes at hackathons and learning in public.</p>
 
-    <!-- TECHNICAL SKILLS -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <span class="skill-icon">&#60;/&#62;</span>
-                <span class="skill-name">HTML</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#123;&#125;</span>
-                <span class="skill-name">CSS</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#9881;</span>
-                <span class="skill-name">Node.js</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#43;&#43;</span>
-                <span class="skill-name">C++</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#128013;</span>
-                <span class="skill-name">Python</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">TS</span>
-                <span class="skill-name">TypeScript</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">JS</span>
-                <span class="skill-name">JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#128268;</span>
-                <span class="skill-name">IoT / ESP32</span>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">&#128065;</span>
-                <span class="skill-name">OpenCV</span>
-            </div>
+        <div class="socials">
+            <a class="circle" href="https://github.com/nishikadhankhar" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.8a5.3 5.3 0 0 0-1.4-3.7 5 5 0 0 0-.1-3.7s-1.1-.3-3.8 1.5a13.4 13.4 0 0 0-7 0C6.3 2.8 5.2 3.1 5.2 3.1a5 5 0 0 0-.1 3.7 5.3 5.3 0 0 0-1.4 3.7c0 5.3 3.2 6.5 6.2 6.8a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+            </a>
+            <a class="circle" href="https://linkedin.com/in/nishika-dhankhar-206473325/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+            </a>
+            <a class="circle" href="mailto:nishidhnkhr@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
         </div>
-    </section>
+    </header>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
+    <main>
+        <!-- ABOUT -->
+        <section id="about" class="block">
+            <p class="label reveal">About me</p>
+            <h2 class="statement reveal">Student, tinkerer and builder making <em>hardware, vision and voice AI</em> work in the real world. From a Raspberry Pi that types barcodes to an assistant that speaks a shopkeeper's language.</h2>
+        </section>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-tag">Hackathon</span>
-                    <h3>Smart India Hackathon (SIH)</h3>
-                    <p>Participated in India's largest hackathon, collaborating with a team to build innovative tech solutions for real-world government and industry problem statements.</p>
-                </div>
+        <!-- CAPABILITIES -->
+        <section id="capabilities" class="block center">
+            <p class="label chip reveal">Capabilities</p>
+            <h2 class="display reveal"><em>Turning curious ideas</em><br>into working systems.</h2>
+            <div class="grid-4">
+                <article class="glass reveal">
+                    <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg></div>
+                    <h3>Embedded &amp; IoT</h3>
+                    <p>ESP32 and Raspberry Pi systems with live sensors, USB HID gadgets and cloud dashboards.</p>
+                </article>
+                <article class="glass reveal d1">
+                    <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <h3>Computer Vision</h3>
+                    <p>OpenCV and MediaPipe projects like touchless drawing and barcode scanning from a live camera.</p>
+                </article>
+                <article class="glass reveal d2">
+                    <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></svg></div>
+                    <h3>Voice &amp; AI</h3>
+                    <p>Voice-first assistants in Hindi, Kannada and English, plus agent systems that route, remember and act.</p>
+                </article>
+                <article class="glass reveal d3">
+                    <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+                    <h3>Full-Stack</h3>
+                    <p>Python, TypeScript and Node backends with web frontends, deployed on Vercel, Render and AWS.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-tag">Hackathon</span>
-                    <h3>College Hackathons</h3>
-                    <p>Competed in multiple intra and inter-college hackathons, designing and developing functional prototypes under tight deadlines.</p>
-                </div>
+        <!-- JOURNEY -->
+        <section id="journey" class="block">
+            <h2 class="display left reveal">The <em>Journey</em></h2>
+            <p class="label reveal">Hackathons, competitions &amp; community</p>
+            <div class="grid-4 journey">
+                <article class="glass reveal">
+                    <div class="when">2026 <span>&mdash; Now</span></div>
+                    <span class="tag">Hackathon</span>
+                    <h3>Paytm Build for India</h3>
+                    <p class="sub">Merchant Growth AI track</p>
+                    <p>Shortlisted for the prototype round with Dukaan Saathi, an AI partner that speaks to shopkeepers through the Soundbox.</p>
+                </article>
+                <article class="glass reveal d1">
+                    <div class="when">2026</div>
+                    <span class="tag">Competition</span>
+                    <h3>Amazon ML Challenge</h3>
+                    <p class="sub">Entity resolution</p>
+                    <p>Scored 0.906 and advanced to the methodology-review round.</p>
+                </article>
+                <article class="glass reveal d2">
+                    <div class="when">Ongoing</div>
+                    <span class="tag">Hackathon</span>
+                    <h3>Smart India Hackathon</h3>
+                    <p class="sub">Government problem statements</p>
+                    <p>Built prototypes like KoshSetu with a team for real government and industry problem statements, plus multiple college hackathons and ideathons.</p>
+                </article>
+                <article class="glass reveal d3">
+                    <div class="when">Ongoing</div>
+                    <span class="tag">Volunteer</span>
+                    <h3>National Service Scheme</h3>
+                    <p class="sub">Community service</p>
+                    <p>Contributing to social welfare activities as an NSS member, building leadership and teamwork.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-tag">Ideathon</span>
-                    <h3>College Ideathons</h3>
-                    <p>Presented innovative ideas and tech-driven solutions in ideathon competitions, focusing on problem identification, feasibility, and impact.</p>
-                </div>
+        <!-- STATS -->
+        <section class="block stats" aria-label="Numbers">
+            <div class="stat reveal"><div class="num" id="stat-projects">12</div><div class="label">Projects built</div></div>
+            <div class="stat reveal d1"><div class="num" id="stat-langs">5</div><div class="label">Languages used</div></div>
+            <div class="stat reveal d2"><div class="num">0.906</div><div class="label">Amazon ML Challenge score</div></div>
+        </section>
+
+        <!-- PROJECTS (rendered from projects.json, refreshed daily by GitHub Actions) -->
+        <section id="projects" class="block">
+            <h2 class="display left reveal">Selected <em>Projects</em></h2>
+            <p class="label reveal">Auto-updated from GitHub</p>
+            <div id="project-grid" class="project-grid"><p class="muted">Loading projects...</p></div>
+            <div id="more-projects" hidden>
+                <p class="label more-label">More repositories</p>
+                <ul id="repo-list"></ul>
             </div>
+        </section>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-tag">Volunteer</span>
-                    <h3>National Service Scheme (NSS)</h3>
-                    <p>Actively contributed to community service and social welfare activities as a member of NSS, developing leadership and teamwork skills.</p>
-                </div>
+        <!-- CONNECT -->
+        <section id="connect" class="block center connect">
+            <h2 class="display reveal">Let's build <em>something cool.</em></h2>
+            <p class="muted reveal d1">Open to internships, hackathon teams, collaborations, or just a chat about hardware and AI.</p>
+            <a class="pill-btn reveal d2" href="mailto:nishidhnkhr@gmail.com">Say hello <span aria-hidden="true">&rarr;</span></a>
+            <div class="connect-links reveal d3">
+                <a href="https://github.com/nishikadhankhar" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/nishika-dhankhar-206473325/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:nishidhnkhr@gmail.com">Email</a>
             </div>
-
-        </div>
-    </section>
-
-    <!-- PROJECTS (rendered from projects.json, refreshed daily by GitHub Actions) -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-grid" class="project-grid"><p class="muted">Loading projects...</p></div>
-        <div id="more-projects" class="project" hidden>
-            <h3>More repositories</h3>
-            <ul id="repo-list"></ul>
-        </div>
-        <p class="muted small">Auto-updated from <a href="https://github.com/nishikadhankhar" target="_blank" rel="noopener">GitHub</a></p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: nishidhnkhr@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/nishikadhankhar" target="_blank">github.com/nishikadhankhar</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/nishika-dhankhar-206473325/" target="_blank">linkedin.com/in/nishika-dhankhar-206473325/</a></p>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; <span id="year">2026</span> Nishika Dhankhar &mdash; Built with passion</p>
+        <span>&copy; <span class="year">2026</span> Nishika Dhankhar</span>
+        <a href="#top">Back to top &uarr;</a>
     </footer>
 
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-
         const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+        const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+        document.querySelectorAll(".year").forEach(e => e.textContent = new Date().getFullYear());
+
+        /* ---- Intro loader ---- */
+        (function () {
+            const loader = document.getElementById("loader");
+            const done = () => { loader.classList.add("hide"); setTimeout(() => loader.remove(), 800); document.body.classList.add("ready"); };
+            if (reduced) return done();
+            const count = document.getElementById("loader-count"), bar = document.getElementById("loader-bar");
+            const start = performance.now(), dur = 1500;
+            (function tick(now) {
+                const t = Math.min(1, ((now || performance.now()) - start) / dur);
+                const n = Math.round(t * 100);
+                count.textContent = String(n).padStart(3, "0");
+                bar.style.width = n + "%";
+                t < 1 ? requestAnimationFrame(tick) : setTimeout(done, 200);
+            })();
+            setTimeout(done, 3500); /* safety net */
+        })();
+
+        /* ---- Scroll reveal ---- */
+        (function () {
+            const els = document.querySelectorAll(".reveal");
+            if (!("IntersectionObserver" in window) || reduced) { els.forEach(e => e.classList.add("in")); return; }
+            const io = new IntersectionObserver(entries => entries.forEach(en => {
+                if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+            }), { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+            window.observeReveal = el => io.observe(el);
+            els.forEach(e => io.observe(e));
+        })();
+
+        /* ---- Card spotlight ---- */
+        document.addEventListener("pointermove", e => {
+            const c = e.target.closest && e.target.closest(".glass, .project-card");
+            if (!c) return;
+            const r = c.getBoundingClientRect();
+            c.style.setProperty("--mx", (e.clientX - r.left) + "px");
+            c.style.setProperty("--my", (e.clientY - r.top) + "px");
+        });
+
+        /* ---- Projects ---- */
         function projectCard(p) {
             const tags = [...(p.language ? [p.language] : []), ...(p.tags || [])]
                 .filter((t, i, a) => a.indexOf(t) === i)
-                .map(t => `<span class="timeline-tag">${esc(t)}</span>`).join(" ");
-            const live = p.live ? `<a class="btn" href="${esc(p.live)}" target="_blank" rel="noopener">Live demo</a>` : "";
-            return `<article class="project-card">
+                .map(t => `<span class="tag">${esc(t)}</span>`).join("");
+            const live = p.live ? `<a href="${esc(p.live)}" target="_blank" rel="noopener">Live demo &nearr;</a>` : "";
+            return `<article class="project-card reveal">
+                <div class="when">${esc((p.pushed || "").slice(0, 4))}</div>
                 <h3>${esc(p.title)}</h3>
-                <div class="tags">${tags}</div>
                 <p>${esc(p.blurb)}</p>
-                <div class="links">${live}<a class="btn" href="${esc(p.repo)}" target="_blank" rel="noopener">Code</a></div>
+                <div class="tags">${tags}</div>
+                <div class="links">${live}<a href="${esc(p.repo)}" target="_blank" rel="noopener">Code &nearr;</a></div>
             </article>`;
         }
 
-        async function loadProjects() {
+        (async function loadProjects() {
             const grid = document.getElementById("project-grid");
             try {
                 const res = await fetch("projects.json", { cache: "no-cache" });
                 if (!res.ok) throw new Error(res.status);
                 const data = await res.json();
                 grid.innerHTML = data.featured.map(projectCard).join("");
+                grid.querySelectorAll(".reveal").forEach(e => window.observeReveal ? window.observeReveal(e) : e.classList.add("in"));
+                const all = [...data.featured, ...data.more];
+                document.getElementById("stat-projects").textContent = all.length;
+                document.getElementById("stat-langs").textContent = new Set(all.map(p => p.language).filter(Boolean)).size;
                 if (data.more.length) {
                     document.getElementById("repo-list").innerHTML = data.more.map(p =>
                         `<li><a href="${esc(p.repo)}" target="_blank" rel="noopener">${esc(p.name)}</a></li>`).join("");
@@ -174,8 +236,7 @@
             } catch (e) {
                 grid.innerHTML = '<p class="muted">Could not load projects. See <a href="https://github.com/nishikadhankhar" target="_blank" rel="noopener">GitHub</a>.</p>';
             }
-        }
-        loadProjects();
+        })();
     </script>
 </body>
 </html>
