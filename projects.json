@@ -173,5 +173,17 @@
       "stars": 0
     }
   ],
-  "more": []
+  "more": [
+    {
+      "name": "MuneemAI",
+      "title": "MuneemAI",
+      "blurb": "",
+      "tags": [],
+      "language": "Python",
+      "repo": "https://github.com/nishikadhankhar/MuneemAI",
+      "live": "",
+      "pushed": "2026-11-21",
+      "stars": 0
+    }
+  ]
 }
